@@ -10,12 +10,12 @@
         const convertString=(str)=>{
             return [...str].map((char,index) => `${index}${char.toUpperCase()}`).join(``);
         };
-
+        
        const userInput = prompt("enter a string");
        if (userInput!=null){
         const converttedString = convertString(userInput);
-        document.body.innerHTML+= `<p>Original String:${userInput}</p>`;
-        document.body.innerHTML+=`<p>Original String:${converttedString}</p>`;
+        document.body.innerHTML+= `<p>lowercase String:${userInput}</p>`;
+        document.body.innerHTML+=`<p>Uppsercase string:${converttedString}</p>`;
        }
         else{
             document.body.innerHTML+=`<p> No input provided </p>`;
